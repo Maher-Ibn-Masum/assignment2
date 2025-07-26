@@ -343,3 +343,132 @@ body {
     height: calc(50% - 15px); 
 }
 
+/* Join Section */
+.join-section {
+    background: url('./images/news-letter-bg.png') no-repeat center center/cover;
+    padding: 100px 0px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    min-height: 400px;
+    color: #fff;
+    width: 100%; 
+}
+
+.join-section .join-content {
+    max-width: 800px; 
+    width: 100%; 
+    text-align: center; 
+}
+
+
+.join-section .join-title {
+    font-size: 3em;
+    margin-bottom: 30px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-left: auto; 
+    margin-right: auto; 
+    display: block; 
+}
+
+.join-section .newsletter-form {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    max-width: 750px; 
+    width: 100%; 
+    margin: 0 auto; 
+}
+
+.join-section .email-input {
+    flex-grow: 1;
+    padding: 15px 20px;
+    border: none;
+    font-size: 1em;
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.join-section .email-input::placeholder {
+    color: #aaa;
+}
+
+.join-section .subscribe-button {
+    padding: 15px 30px;
+    background-color: #ff7f50;
+    color: #fff;
+    border: none;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.join-section .subscribe-button:hover {
+    background-color: #e66a3d;
+}
+
+/* Footer Section */
+.footer-section {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    padding: 60px 150px; 
+    background-color: #fff; 
+}
+
+.footer-section .footer-left {
+    flex: 1; 
+    max-width: 30%; 
+    margin-right: 40px; 
+}
+
+.footer-section .footer-logo {
+    height: 60px; 
+    margin-bottom: 20px; 
+}
+
+.footer-section .footer-links {
+    display: flex; 
+    gap: 150px; 
+    margin-right: 40px; 
+}
+
+.footer-section .link-column ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.footer-section .link-column ul li {
+    margin-bottom: 30px; 
+}
+
+.footer-section .link-column ul li a {
+    text-decoration: none; 
+    color: #666; 
+    transition: color 0.3s ease; 
+}
+
+.footer-section .link-column ul li a:hover {
+    color: #ff7f50; 
+}
+
+.footer-section .footer-social {
+    display: flex; 
+    gap: 15px; 
+    align-items: flex-start; 
+}
+
+.footer-section .social-icon {
+    width: 30px; 
+    height: 30px; 
+    transition: transform 0.2s ease; 
+}
+
+.footer-section .social-icon:hover {
+    transform: translateY(-3px); 
+}
