@@ -1,3 +1,18 @@
+@keyframes spin-infinite {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.trusted-badge {
+    animation: spin-infinite 5s linear infinite; 
+}
+
+
+
 /*shared styles*/
 .orange-text {
     color: #ec7f4e;
@@ -83,7 +98,7 @@ body {
     align-items: flex-end;
     margin: 0 auto;
     padding: 60px 150px; 
-    max-width: 60%;
+    max-width: 70%;
     min-height: calc(50vh - 90px); 
 }
 
@@ -178,7 +193,7 @@ body {
     align-items: center; 
     justify-content: center;
     padding: 80px 150px; 
-    gap: 80px; 
+    gap: 40px; 
 }
 
 .lover-image-wrapper { 
