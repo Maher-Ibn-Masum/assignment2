@@ -37,10 +37,10 @@ body {
 /* Navbar styles */
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin: 0 auto;
-    max-width: 65%;
+    gap: 650px;
+    max-width: 100%;
     padding: 20px 150px; 
 }
 
@@ -79,10 +79,11 @@ body {
 /* Banner styles */
 .banner {
     display: flex;
+    justify-content: center;
     align-items: flex-end;
     margin: 0 auto;
     padding: 60px 150px; 
-    max-width: 65%;
+    max-width: 60%;
     min-height: calc(50vh - 90px); 
 }
 
@@ -471,4 +472,322 @@ body {
 
 .footer-section .social-icon:hover {
     transform: translateY(-3px); 
+}
+
+
+/* --- Responsive Design for Mobile (e.g., max-width: 768px for tablets/phones) --- */
+@media (max-width: 768px) {
+
+    body {
+        max-width: 100%;
+    }
+
+    /* Navbar adjustments */
+    .navbar {
+        padding: 15px 20px; 
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2px;
+    }
+
+    .navbar .logo img {
+        height: 40px; 
+    }
+
+    .nav-menu {
+        flex-grow: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .nav-menu ul {
+        flex-direction: row;
+        justify-content: flex-end; 
+        width: auto; 
+    }
+
+    .nav-menu ul li {
+        margin-left: 0; 
+        width: auto; 
+    }
+
+    /* Hide other navbar elements */
+    .nav-menu ul li:not(:last-child) {
+        display: none;
+    }
+
+    /* Keep Cart icon visible and styled */
+    .nav-menu ul li:last-child a {
+        padding: 0; 
+        font-size: 1em; 
+        white-space: nowrap; 
+    }
+
+    /* Banner adjustments */
+    .banner {
+        flex-direction: column; 
+        padding: 30px 20px; 
+        min-height: auto; 
+        align-items: flex-start; 
+        text-align: left; 
+        max-width: 100%
+    }
+
+    .banner-content {
+        order: 1; 
+        max-width: 100%; 
+        text-align: left; 
+        margin-bottom: 25px; 
+    }
+
+    .banner-title {
+        font-size: 2.2em; 
+        margin-bottom: 10px; 
+    }
+
+    .banner-content p {
+        font-size: 0.95em; 
+        max-width: 100%; 
+        margin-left: 0; 
+        margin-right: 0; 
+        margin-bottom: 5px; 
+    }
+
+    .banner-image {
+        order: -1; 
+        width: calc(100% + 40px); 
+        margin-left: -20px;
+        margin-right: -20px; 
+        display: flex; 
+        justify-content: center; 
+    }
+
+    .banner-image img {
+        width: 100%; 
+        max-width: 100%; 
+        height: auto;
+        display: block; 
+    }
+    
+
+    /* Plants Section adjustments */
+    .plants-section {
+        padding: 40px 20px;
+    }
+
+    .section-header {
+        margin-bottom: 30px; 
+    }
+
+    .section-title {
+        font-size: 2em; 
+    }
+
+    .section-subtitle {
+        font-size: 0.95em; 
+        max-width: 100%; 
+    }
+
+    .plants-grid {
+        grid-template-columns: repeat(2, 1fr); 
+        max-width: 100%;
+        gap: 15px; 
+    }
+
+    .plant-card {
+        padding: 10px; 
+    }
+
+    .plant-card img {
+        margin-bottom: 8px; 
+    }
+
+    .plant-name {
+        font-size: 1em;
+    }
+
+    .plant-price {
+        font-size: 0.9em;
+    }
+
+    .add-to-cart-btn {
+        padding: 8px 15px; 
+        font-size: 0.8em;
+    }
+
+    /* Flower & Plants Lover Mobile Responsiveness */
+    .plants-lover-section {
+        flex-direction: column; 
+        text-align: center; 
+        gap: 30px; 
+        padding: 40px 20px; 
+    }
+
+    .plants-lover-section .lover-image-wrapper {
+        width: 100%; 
+        max-width: 380px; 
+        padding: 0;
+        box-sizing: border-box; 
+        border-radius: 8px; 
+        overflow: hidden; 
+    }
+
+
+
+    .plants-lover-section .lover-content h2 {
+        font-size: 1.8em; 
+        margin-bottom: 20px; 
+    }
+
+    .lover-title .hidden-br {
+        display: none;
+    }
+
+    .plants-lover-section .lover-content ul li {
+        font-size: 0.9em; 
+        margin-bottom: 10px;
+    }
+
+    /* Trusted Plant Lover Badge Mobile Responsiveness: Hide the Trusted badge */
+    .plants-lover-section .trusted-badge {
+        display: none; /* Hides the badge on mobile devices */
+    }
+
+    /* Latest Deals Mobile Responsiveness */
+    .latest-deals-section {
+        padding: 40px 20px; 
+    }
+
+    .deals-grid {
+        max-width: 100%;
+        flex-direction: column; 
+        gap: 20px; 
+        align-items: center; 
+    }
+
+    .deal-card {
+        width: 100%; 
+        max-width: 100%; 
+        height: 250px; 
+    }
+
+    .large-card, .side-deals, .small-card {
+        flex: none; 
+        min-width: auto;
+        height: auto; 
+    }
+
+    .large-card, .small-card {
+        height: 250px; 
+    }
+
+    .side-deals {
+        flex-direction: column; 
+        width: 100%; 
+        gap: 20px; 
+    }
+
+    .deal-card .deal-offer {
+        font-size: 1.4em; 
+    }
+
+    .shop-now-link {
+        font-size: 0.8em; 
+    }
+
+    /* Join Section Mobile */
+    .join-section {
+        padding: 60px 20px; 
+        min-height: unset; 
+        max-width: 90%;
+    }
+
+    .join-section .join-title {
+        font-size: 1.5em; 
+        margin-bottom: 20px;
+        text-align: center; 
+    }
+
+    .join-section .newsletter-form {
+        display: flex; 
+        flex-direction: row; 
+        flex-wrap: nowrap;
+        justify-content: center; 
+        align-items: center; 
+        max-width: 80%; 
+        margin: 0 auto; 
+    }
+
+    .join-section .email-input {
+        flex: 1; 
+        padding: 12px 15px; 
+        border: none;
+        font-size: 0.95em; 
+        outline: none;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        height: 55px; 
+        box-sizing: border-box; 
+    }
+
+    .join-section .subscribe-button {
+        width: 35%; 
+        flex-shrink: 0; 
+        padding: 5px 15px; 
+        height: 55px; 
+        background-color: #ff7f50;
+        color: #fff;
+        border: none;
+        font-size: 1em; 
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box; 
+    }
+
+    /* --- Footer Section Mobile --- */
+    .footer-section {
+        flex-direction: column; 
+        align-items: flex-start; 
+        padding: 40px 20px; 
+        text-align: left; 
+    }
+
+    .footer-section .footer-left {
+        margin-right: 0; 
+        margin-bottom: 30px; 
+        max-width: 100%; 
+        width: 100%; 
+    }
+
+    .footer-section .footer-logo {
+        margin-bottom: 15px; 
+    }
+
+    .footer-section .footer-description {
+        margin-bottom: 10px;
+    }
+
+    .footer-section .footer-links {
+        flex-direction: column; 
+        gap: 10px; 
+        margin-right: 0; 
+        margin-bottom: 10px; 
+        width: 100%; 
+    }
+
+    .footer-section .link-column {
+        width: 100%; 
+    }
+
+    .footer-section .link-column ul li {
+        margin-bottom: 30px;
+    }
+
+    .footer-section .footer-social {
+        justify-content: flex-start; 
+        gap: 15px; 
+        width: 100%;
+    }
 }
